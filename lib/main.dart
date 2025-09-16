@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Demo Flutter',
+      title: 'Taller 1 - Flutter Móvil 230212013 Gonzalo Marín ',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
@@ -30,7 +30,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   String _title = "Hola, Flutter";
-  String _mensaje = ""; // Nuevo mensaje dinámico
+  String _mensaje =
+      "bienvenido a Flutter Móvil 230212013 Gonzalo Marín"; // Nuevo mensaje dinámico
 
   void _changeTitle() {
     setState(() {
@@ -164,6 +165,15 @@ class _HomePageState extends State<HomePage> {
                     height: 120,
                     fit: BoxFit.cover,
                   ),
+                  const Text(
+                    "Texto encima",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
                   Container(
                     color: Colors.black54,
                     padding: const EdgeInsets.all(8),
@@ -207,5 +217,5 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
-  }
+  } // se realizo todos los cambios respecto al taller 1
 }
