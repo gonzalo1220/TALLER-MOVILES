@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../services/auth_service.dart';
+import 'universities_stream.dart';
 
 class EvidencePage extends StatefulWidget {
   const EvidencePage({super.key});
@@ -126,6 +127,30 @@ class _EvidencePageState extends State<EvidencePage> {
                           ],
                         ),
                       ),
+                    ],
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 20),
+
+              // Live list from Firestore (universidades)
+              Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                elevation: 3,
+                child: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Universidades (sincronizadas)',
+                        style: theme.textTheme.titleMedium,
+                      ),
+                      const SizedBox(height: 8),
+                      SizedBox(height: 220, child: UniversitiesStream()),
                     ],
                   ),
                 ),
