@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "84341817161",
+    "project_id": "registro-a9d09",
+    "storage_bucket": "registro-a9d09.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84341817161:android:5d0bd869ff0e11b4d5e498",
+        "android_client_info": {
+          "package_name": "com.example.hola_mundo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAORZObF3SlyOykSNbAAC6ReBU5d0LA5SE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
